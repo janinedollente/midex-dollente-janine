@@ -190,6 +190,8 @@
       return 'EVNT-DRIV-MID-1';
   }
 
+
+
   function updateCategoryCounts() {
       const categoryCounts = {
           'Food and Beverage': 0,
@@ -238,6 +240,7 @@
           filtercatChange();
           resetForm();
           populateTable(products);
+          document.getElementById('prodid').value = productID;
       } else {
           alert('Please fill in all required fields.');
       }
